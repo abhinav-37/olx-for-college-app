@@ -53,8 +53,6 @@ class LoginScreen extends StatelessWidget {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(18),
                   ),
-
-                  // foregroundColor: CustomColors.orangeColor,
                 ),
                 onPressed: () {},
                 child: const Padding(

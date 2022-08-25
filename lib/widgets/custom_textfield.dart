@@ -36,7 +36,7 @@ class CustomTextField extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextFormField(
       textInputAction: textInputAction,
-      autofocus: true,
+      // autofocus: true,
       autovalidateMode: AutovalidateMode.onUserInteraction,
       validator: validator,
       cursorColor: Colors.black,
