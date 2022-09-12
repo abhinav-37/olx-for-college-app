@@ -1,6 +1,8 @@
+
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:olx_iete/screens/sections/addItem_section.dart';
 import 'package:olx_iete/screens/sections/home_section.dart';
 import 'package:olx_iete/screens/sections/messages_section.dart';
 import 'package:olx_iete/screens/sections/more_section.dart';
@@ -26,6 +28,7 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
     SearchSection(),
     MessageSectin(),
     MoreSection(),
+    AddItemSection(title: 'App Name',),
   ];
   @override
   Widget build(BuildContext context) {
@@ -54,6 +57,7 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
             icon: Icon(Icons.more_horiz_rounded),
             label: "",
           ),
+          NavigationDestination(icon: Icon(Icons.add), label: "")
         ],
       ),
       body: IndexedStack(
